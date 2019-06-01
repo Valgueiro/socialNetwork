@@ -1,97 +1,97 @@
-body {
+html, body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  border: 0;
   width: 100%;
   height: 100%;
 }
-
-header {
-  font-family: 'Baloo Tamma', cursive;
-  text-align: center;
-  font-size: 2.5em;
-  height: 15vh;
-  color: rgba(255, 255, 255, 0.9);
-  background-color: #6955A1;
-}
-
 .main {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   width: 100%;
-  height: 85vh;
-  background-color: #6955A1;
+  height: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(to right, #88B25D 50%, #F2921D 50%);
 }
-
 .box {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  text-align: center;
+  position: relative;
+  font-family: 'Ubuntu', sans-serif;
+  border: 1px solid rgba(22, 22, 22, 0.8);
   width: 40%;
-  font-family: 'Baloo Tamma', cursive;
-  border-radius: 10px 10px 10px 10px;
-  background-color: #98A6D4;
 }
-
-.box-name{
-  font-size: 3em;
+.box-login {
+  height: 50%;
+  left: 13%;
+  z-index: 1;
+  background-color: #F2CD8B;
+  border-radius: 0 0 50px 30px;
+  text-align: center;
 }
-
+.box-cadastro {
+  height: 60%;
+  left: 45%;
+  bottom: 10%;
+  background-color: #A67051;
+  border-radius: 0px 30px 0 0;
+  text-align: center;
+}
+.box-item {
+  display: block;
+  padding-top: 2%;
+}
+.box-name {
+  font-size: 45px;
+  height: 20%;
+}
+.formulario {
+  height: 50%;
+}
 .form-item {
-    font-size: 1.4em;
-    margin: 2% 0 0 0;
-    border-radius: 5px;
-    border: 1px solid rgba(22, 22, 22, 0.8);
+  margin-top: 1%;
+  width: 60%;
+  height: 20%;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(22, 22, 22, 0.8);
 }
-
-.form-input {
-    width: 90%;
-    font-family: 'Varela', sans-serif;
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
 .form-button {
-    width: 40%;
-    background-color: #27BD8D;
+  width: 40%;
 }
-
 .esqueci-senha {
-  font-size: 1em;
   text-decoration: none;
   color: rgba(22, 22, 22, 0.8);
 }
-
-@media screen and (max-width: 700px) {
-  .box {
-    width: 60%;
-  }
-  .main {
-    flex-direction: column;
-  }
+@media screen and (max-width: 900px) {
   .box-name {
-    font-size: 2.5em;
+      font-size: 40px;
+  }
+}
+@media screen and (max-width: 810px) {
+  .box-name {
+      font-size: 35px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .box-name {
+      font-size: 30px;
   }
   .form-item {
-    font-size: 1.3em;
+      width: 80%;
   }
   .form-button {
-    width: 65%;
+      width: 55%;
   }
 }
-
-@media screen and (max-width: 500px) {
-  .box-name {
-    font-size: 1.9em;
+@media screen and (max-width: 620px) {
+  .box-login, .box-cadastro {
+      width: 60%;
+      height: 50%;
+      left: 20%;
+      border-radius: 0 0 50px 50px;
   }
-  .form-item {
-    font-size: 1.1em;
+  .box-cadastro {
+      bottom: 0;
+      border-radius: 50px 50px 0 0;
   }
-}
-
-@media screen and (max-width: 390px) {
   .box-name {
-    font-size: 1.4em;
+      font-size: 26px;
   }
 }
